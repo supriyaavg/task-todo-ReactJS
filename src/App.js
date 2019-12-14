@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Col,Row} from 'react-bootstrap';
-import TaskList from './TaskList';
-import ButtonComponent from './ButtonComponent';
-import MessageComponent from './MessageComponent';
+import TaskList from './Components/TaskList';
+import ButtonComponent from './Components/ButtonComponent';
+import MessageComponent from './Components/MessageComponent';
 
 const taskList = [
   {id: 1,"details": "Do laundry","completed": false},
@@ -64,7 +64,7 @@ class App extends React.Component{
       <div className="app">
       <Row>
         <Col><h4>My tasks todo</h4></Col>
-        <Col><ButtonComponent text ="Showmore" click={this.showMore}/></Col>
+        <Col><ButtonComponent text ="Show more" click={this.showMore}/></Col>
       </Row>  
         <TaskList done = {this.done} list = {this.state.tasks}/>
         <br/>
