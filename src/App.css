@@ -1,0 +1,14 @@
+.app {
+  margin: auto;
+  width:50%;
+  margin-top:10%;
+}
+
+.chkBox{
+  float: right;
+  margin-top:5px;
+}
+
+.taskText{
+  float : left;
+}
